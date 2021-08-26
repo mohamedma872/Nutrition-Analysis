@@ -1,0 +1,6 @@
+framework module Pods_Nutrition_Analysis_Nutrition_AnalysisUITests {
+  umbrella header "Pods-Nutrition-Analysis-Nutrition-AnalysisUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
