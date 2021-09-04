@@ -5,8 +5,8 @@ import RxCocoa
 class TotalFactsViewModel : BaseViewModel {
    
     let disposeBag = DisposeBag()
-    private let networkInstance: NetworkManager
-    init(networkInstance : NetworkManager = NetworkManager()) {
+    private let networkInstance: NutritionNetworkProtocal
+    init(networkInstance : NutritionNetworkProtocal = NutritionNetworkManager()) {
         self.networkInstance = networkInstance
     }
     var loadingBehavior = BehaviorRelay<Bool>(value: false)

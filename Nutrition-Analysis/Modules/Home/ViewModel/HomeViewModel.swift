@@ -28,7 +28,6 @@ class HomeViewModel {
     }
     
     func getIngredients() {
-
             let ingredients =  ingredientsTextViewBehavior.value.split(separator: "\n").compactMap({String($0)})
             self.IngredientsSubject.onNext(ingredients)
         }

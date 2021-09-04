@@ -11,8 +11,8 @@ enum IngredientTableViewCellType {
 class IngredientsDetailsViewModel : BaseViewModel {
     
     let disposeBag = DisposeBag()
-    private let networkInstance: NetworkManager
-    init(networkInstance : NetworkManager = NetworkManager()) {
+    private let networkInstance: NutritionNetworkProtocal
+    init(networkInstance : NutritionNetworkProtocal = NutritionNetworkManager()) {
         self.networkInstance = networkInstance
         CellsObservable = cells.asObservable()
     }

@@ -1,13 +1,15 @@
 import UIKit
+import Swinject
 class MainCoordinator: Coordinator , MainCoordinatorProctocol {
+    let container: Container
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController,container: Container) {
         self.navigationController = navigationController
+        self.container = container
     }
     
     func start() {
-
         let vc = HomeViewController.instantiate()
         let homeViewmodel = HomeViewModel()
         vc.coordinator = self
@@ -17,7 +19,7 @@ class MainCoordinator: Coordinator , MainCoordinatorProctocol {
   
     func NavigateToIngredientsDetails(ingredients: [String]?) {
         let vc = IngredientsDetailsViewController.instantiate()
-        let viewmodel = IngredientsDetailsViewModel()
+        let viewmodel = container.resolve(BaseViewModel.self ,name:"IngredientsDetailsViewModel")! as! IngredientsDetailsViewModel
         vc.coordinator = self
         vc.ingredients = ingredients
         vc.viewModel = viewmodel
@@ -26,7 +28,7 @@ class MainCoordinator: Coordinator , MainCoordinatorProctocol {
     
     func NavigateToTotalNutritionFacts(ingredients: [String]?) {
         let vc = TotalFactsViewController.instantiate()
-        let viewmodel = TotalFactsViewModel()
+        let viewmodel = container.resolve(BaseViewModel.self,name:"TotalFactsViewModel")! as! TotalFactsViewModel
         vc.coordinator = self
         vc.ingredients = ingredients
         vc.viewModel = viewmodel

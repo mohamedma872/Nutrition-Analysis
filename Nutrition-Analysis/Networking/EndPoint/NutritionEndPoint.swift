@@ -14,7 +14,7 @@ public enum NutritionApi {
 extension NutritionApi: EndPointType {
     
     var environmentBaseURL : String {
-        switch NetworkManager.environment {
+        switch NutritionNetworkManager.environment {
         case .production: return NetworkConstant.baseUrl
         case .qa: return NetworkConstant.baseUrl + "qaServer"
         case .staging: return NetworkConstant.baseUrl + "StagingServer"

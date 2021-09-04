@@ -17,6 +17,10 @@ class HomeViewController: UIViewController, Storyboarded {
         bindViewModel()
         setupUI()
     }
+    func configure(with VModel: HomeViewModel)
+    {
+        self.viewModel = VModel
+    }
     func bindViewModel() {
         bindTextViewToViewModel()
         subscribeIsAnalyseBtnEnabled()

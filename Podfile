@@ -15,26 +15,19 @@ target 'Nutrition-Analysis' do
   pod 'MBProgressHUD'
   pod 'SwiftLint'
   pod 'Swinject'
+  pod 'SwinjectStoryboard'
+  pod 'Sourcery'
+  pod 'SwiftyMocky'
+  pod 'ReachabilitySwift'
   target 'Nutrition-AnalysisTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking'
+    pod 'RxTest'
   end
 
   target 'Nutrition-AnalysisUITests' do
     # Pods for testing
   end
 
-end
-
-post_install do |installer|
-    installer.generated_projects.each do |project|
-        project.targets.each do |target|
-            target.build_configurations.each do |config|
-                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = deployment_target
-            end
-        end
-        project.build_configurations.each do |config|
-            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = deployment_target
-        end
-    end
 end

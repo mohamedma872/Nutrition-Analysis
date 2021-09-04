@@ -12,8 +12,7 @@
 		BB30316C26D2061000A99866 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BB30316B26D2061000A99866 /* .swiftlint.yml */; };
 		BB72550C26D28C5E00EF98AD /* IngredientCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72550B26D28C5E00EF98AD /* IngredientCellViewModel.swift */; };
 		BB72554426D296C600EF98AD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72550E26D296C600EF98AD /* AppCoordinator.swift */; };
-		BB72556A26D296C600EF98AD /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72553F26D296C600EF98AD /* MenuCoordinator.swift */; };
-		BB72556B26D296C600EF98AD /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72554026D296C600EF98AD /* Storyboarded.swift */; };
+		BB72556B26D296C600EF98AD /* StoryboardedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72554026D296C600EF98AD /* StoryboardedProtocol.swift */; };
 		BB72556C26D296C600EF98AD /* MainCoordinatorProctocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72554126D296C600EF98AD /* MainCoordinatorProctocol.swift */; };
 		BB72556D26D296C600EF98AD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72554226D296C600EF98AD /* MainCoordinator.swift */; };
 		BB72556E26D296C600EF98AD /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72554326D296C600EF98AD /* CoordinatorProtocol.swift */; };
@@ -33,6 +32,11 @@
 		BB9DCE7326D1556600A8609F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9DCE6F26D1556500A8609F /* UIView+Border.swift */; };
 		BB9DCE7426D1556600A8609F /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9DCE7026D1556500A8609F /* UIView+CornerRadius.swift */; };
 		BB9DCE7A26D1F06B00A8609F /* TotalNutrients.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9DCE7826D1F06B00A8609F /* TotalNutrients.swift */; };
+		BBB0144226DA7C2B0043154E /* mocky.yml in Resources */ = {isa = PBXBuildFile; fileRef = BBB0144126DA7C2B0043154E /* mocky.yml */; };
+		BBB0144F26E025A60043154E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0144E26E025A60043154E /* BaseViewController.swift */; };
+		BBB0145326E034450043154E /* ReachabilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0145226E034450043154E /* ReachabilityHelper.swift */; };
+		BBB0145526E0345E0043154E /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0145426E0345E0043154E /* Print.swift */; };
+		BBB0145826E2CD1E0043154E /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0145726E2CD1E0043154E /* AppDelegate+Setup.swift */; };
 		BBC7C3DF26D0860A00BBA6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7C3DE26D0860A00BBA6DA /* AppDelegate.swift */; };
 		BBC7C3E126D0860A00BBA6DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7C3E026D0860A00BBA6DA /* SceneDelegate.swift */; };
 		BBC7C3E626D0860A00BBA6DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC7C3E426D0860A00BBA6DA /* Main.storyboard */; };
@@ -83,8 +87,7 @@
 		BB30316B26D2061000A99866 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BB72550B26D28C5E00EF98AD /* IngredientCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCellViewModel.swift; sourceTree = "<group>"; };
 		BB72550E26D296C600EF98AD /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		BB72553F26D296C600EF98AD /* MenuCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
-		BB72554026D296C600EF98AD /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		BB72554026D296C600EF98AD /* StoryboardedProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardedProtocol.swift; sourceTree = "<group>"; };
 		BB72554126D296C600EF98AD /* MainCoordinatorProctocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinatorProctocol.swift; sourceTree = "<group>"; };
 		BB72554226D296C600EF98AD /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		BB72554326D296C600EF98AD /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
@@ -104,6 +107,11 @@
 		BB9DCE6F26D1556500A8609F /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		BB9DCE7026D1556500A8609F /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
 		BB9DCE7826D1F06B00A8609F /* TotalNutrients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNutrients.swift; sourceTree = "<group>"; };
+		BBB0144126DA7C2B0043154E /* mocky.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = mocky.yml; sourceTree = "<group>"; };
+		BBB0144E26E025A60043154E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BBB0145226E034450043154E /* ReachabilityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityHelper.swift; sourceTree = "<group>"; };
+		BBB0145426E0345E0043154E /* Print.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
+		BBB0145726E2CD1E0043154E /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
 		BBC7C3DB26D0860A00BBA6DA /* Nutrition-Analysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nutrition-Analysis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC7C3DE26D0860A00BBA6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBC7C3E026D0860A00BBA6DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -205,22 +213,11 @@
 		BB72550D26D296C600EF98AD /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				BBB0144D26E01DF30043154E /* protocol */,
 				BB72550E26D296C600EF98AD /* AppCoordinator.swift */,
-				BB72553E26D296C600EF98AD /* Childs */,
-				BB72554026D296C600EF98AD /* Storyboarded.swift */,
-				BB72554126D296C600EF98AD /* MainCoordinatorProctocol.swift */,
 				BB72554226D296C600EF98AD /* MainCoordinator.swift */,
-				BB72554326D296C600EF98AD /* CoordinatorProtocol.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		BB72553E26D296C600EF98AD /* Childs */ = {
-			isa = PBXGroup;
-			children = (
-				BB72553F26D296C600EF98AD /* MenuCoordinator.swift */,
-			);
-			path = Childs;
 			sourceTree = "<group>";
 		};
 		BB9DCE4C26D12DFB00A8609F /* EndPoint */ = {
@@ -279,9 +276,45 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
+		BBB0144D26E01DF30043154E /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BB72554126D296C600EF98AD /* MainCoordinatorProctocol.swift */,
+				BB72554326D296C600EF98AD /* CoordinatorProtocol.swift */,
+				BB72554026D296C600EF98AD /* StoryboardedProtocol.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		BBB0145026E025AA0043154E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BBB0144E26E025A60043154E /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BBB0145126E0343B0043154E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BBB0145426E0345E0043154E /* Print.swift */,
+				BBB0145226E034450043154E /* ReachabilityHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BBB0145626E0492E0043154E /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				BBB0145726E2CD1E0043154E /* AppDelegate+Setup.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		BBC7C3D226D0860A00BBA6DA = {
 			isa = PBXGroup;
 			children = (
+				BBB0144126DA7C2B0043154E /* mocky.yml */,
 				BB30316B26D2061000A99866 /* .swiftlint.yml */,
 				BBC7C3DD26D0860A00BBA6DA /* Nutrition-Analysis */,
 				BBC7C3F426D0860B00BBA6DA /* Nutrition-AnalysisTests */,
@@ -305,6 +338,9 @@
 		BBC7C3DD26D0860A00BBA6DA /* Nutrition-Analysis */ = {
 			isa = PBXGroup;
 			children = (
+				BBB0145626E0492E0043154E /* Dependencies */,
+				BBB0145126E0343B0043154E /* Helper */,
+				BBB0145026E025AA0043154E /* Base */,
 				BB72550D26D296C600EF98AD /* Coordinator */,
 				BBCC9AE226D0B5F3005AFA13 /* Model */,
 				BBC7C40E26D0876200BBA6DA /* Networking */,
@@ -342,8 +378,8 @@
 			children = (
 				BB9DCE4E26D12DFB00A8609F /* Encoding */,
 				BB9DCE4C26D12DFB00A8609F /* EndPoint */,
-				BB9DCE5926D12DFB00A8609F /* Manager */,
 				BB9DCE5226D12DFB00A8609F /* Service */,
+				BB9DCE5926D12DFB00A8609F /* Manager */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -488,6 +524,7 @@
 				BBC7C3ED26D0860A00BBA6DA /* Sources */,
 				BBC7C3EE26D0860A00BBA6DA /* Frameworks */,
 				BBC7C3EF26D0860A00BBA6DA /* Resources */,
+				0867AF000F168F1EE2AF786C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -568,6 +605,7 @@
 			files = (
 				BB30316C26D2061000A99866 /* .swiftlint.yml in Resources */,
 				BBCC9AF826D0B6D9005AFA13 /* IngredientTableViewCell.xib in Resources */,
+				BBB0144226DA7C2B0043154E /* mocky.yml in Resources */,
 				BBC7C3EB26D0860A00BBA6DA /* LaunchScreen.storyboard in Resources */,
 				BBC7C3E826D0860A00BBA6DA /* Assets.xcassets in Resources */,
 				BBC7C3E626D0860A00BBA6DA /* Main.storyboard in Resources */,
@@ -591,6 +629,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0867AF000F168F1EE2AF786C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nutrition-AnalysisTests/Pods-Nutrition-AnalysisTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nutrition-AnalysisTests/Pods-Nutrition-AnalysisTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nutrition-AnalysisTests/Pods-Nutrition-AnalysisTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0AD878689CA4324659DEEE81 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -717,10 +772,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB72554426D296C600EF98AD /* AppCoordinator.swift in Sources */,
+				BBB0145526E0345E0043154E /* Print.swift in Sources */,
 				BB9DCE6826D13AFD00A8609F /* NetworkConstants.swift in Sources */,
 				BB9DCE6326D12DFB00A8609F /* NetworkLogger.swift in Sources */,
 				BB9DCE5C26D12DFB00A8609F /* ParameterEncoding.swift in Sources */,
 				BBCC9AE826D0B665005AFA13 /* Nutrient.swift in Sources */,
+				BBB0144F26E025A60043154E /* BaseViewController.swift in Sources */,
 				BB9DCE6226D12DFB00A8609F /* Router.swift in Sources */,
 				BBCC9AFF26D0B78F005AFA13 /* HomeViewController.swift in Sources */,
 				BBCC9ADC26D0B57D005AFA13 /* HomeViewModel.swift in Sources */,
@@ -734,9 +791,11 @@
 				BB9DCE6126D12DFB00A8609F /* HTTPMethod.swift in Sources */,
 				BBC7C3E126D0860A00BBA6DA /* SceneDelegate.swift in Sources */,
 				BB9DCE6426D12DFB00A8609F /* EndPointType.swift in Sources */,
+				BBB0145826E2CD1E0043154E /* AppDelegate+Setup.swift in Sources */,
 				BB8332DC26D2C1C5007CFAA0 /* TotalNutrientsKCal.swift in Sources */,
 				BB9DCE7A26D1F06B00A8609F /* TotalNutrients.swift in Sources */,
-				BB72556B26D296C600EF98AD /* Storyboarded.swift in Sources */,
+				BB72556B26D296C600EF98AD /* StoryboardedProtocol.swift in Sources */,
+				BBB0145326E034450043154E /* ReachabilityHelper.swift in Sources */,
 				BBCC9AF426D0B6BD005AFA13 /* TotalFactsViewModel.swift in Sources */,
 				BBCC9AE626D0B665005AFA13 /* AnalyzeResponse.swift in Sources */,
 				BBCC9AE726D0B665005AFA13 /* Ingredient.swift in Sources */,
@@ -745,7 +804,6 @@
 				BB9DCE7126D1556600A8609F /* UIViewController + Extension.swift in Sources */,
 				BBCC9AF226D0B6B1005AFA13 /* IngredientsDetailsViewModel.swift in Sources */,
 				BB9DCE7326D1556600A8609F /* UIView+Border.swift in Sources */,
-				BB72556A26D296C600EF98AD /* MenuCoordinator.swift in Sources */,
 				BB72556C26D296C600EF98AD /* MainCoordinatorProctocol.swift in Sources */,
 				BB9DCE5D26D12DFB00A8609F /* URLParameterEncoding.swift in Sources */,
 				BBF3D56B26D2BAC700A63BAB /* BaseViewModel.swift in Sources */,

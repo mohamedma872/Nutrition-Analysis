@@ -15,13 +15,35 @@ enum Result<String> {
     case success
     case failure(String)
 }
-
-struct NetworkManager {
+protocol BaseNetworkManager{
+    static var environment: NetworkEnvironment { get }
+    var router: NetworkRouter {get set}
+    func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String>
+}
+extension BaseNetworkManager{
+    // default implementation for handleNetworkResponse function
+     func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String> {
+        switch response.statusCode {
+        case 200...299: return .success
+        case 401...500: return .failure(NetworkResponse.authenticationError.rawValue)
+        case 501...599: return .failure(NetworkResponse.badRequest.rawValue)
+        case 600: return .failure(NetworkResponse.outdated.rawValue)
+        default: return .failure(NetworkResponse.failed.rawValue)
+        }
+    }
+}
+// Implementing SOLID - Interface Segregation
+protocol NutritionNetworkProtocal : BaseNetworkManager {
+    func analyze(ingr: String) -> Observable<AnalyzeResponse?>
+    func getFacts(ingr: [String]) -> Observable<AnalyzeResponse?>
+    
+}
+struct NutritionNetworkManager : NutritionNetworkProtocal{
+    var router : NetworkRouter = Router<NutritionApi>()
     static let environment : NetworkEnvironment = .production
-    let router = Router<NutritionApi>()
     func analyze(ingr: String) -> Observable<AnalyzeResponse?> {
         return Observable.create { observer -> Disposable in
-            router.request(.analyze(ingr: ingr)) { data, response, error in
+            router.request(NutritionApi.analyze(ingr: ingr)) { data, response, error in
 
                 if let response = response as? HTTPURLResponse {
                     let result = self.handleNetworkResponse(response)
@@ -55,7 +77,7 @@ struct NetworkManager {
     }
     func getFacts(ingr: [String]) -> Observable<AnalyzeResponse?> {
         return Observable.create { observer -> Disposable in
-            router.request(.getFacts(ingr: ingr)) { data, response, error in
+            router.request(NutritionApi.getFacts(ingr: ingr)) { data, response, error in
 
                 if let response = response as? HTTPURLResponse {
                     let result = self.handleNetworkResponse(response)
@@ -87,13 +109,5 @@ struct NetworkManager {
         }
     }
 
-    fileprivate func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String> {
-        switch response.statusCode {
-        case 200...299: return .success
-        case 401...500: return .failure(NetworkResponse.authenticationError.rawValue)
-        case 501...599: return .failure(NetworkResponse.badRequest.rawValue)
-        case 600: return .failure(NetworkResponse.outdated.rawValue)
-        default: return .failure(NetworkResponse.failed.rawValue)
-        }
-    }
+
 }

@@ -2,6 +2,7 @@ import Foundation
 
 public typealias Parameters = [String:Any]
 
+//sourcery: AutoMockable
 public protocol ParameterEncoder {
     func encode(urlRequest: inout URLRequest, with parameters: Parameters) throws
 }
