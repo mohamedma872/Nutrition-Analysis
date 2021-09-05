@@ -15,7 +15,6 @@ target 'Nutrition-Analysis' do
   pod 'MBProgressHUD'
   pod 'SwiftLint'
   pod 'Swinject'
-  pod 'SwinjectStoryboard'
   pod 'Sourcery'
   pod 'SwiftyMocky'
   pod 'ReachabilitySwift'
