@@ -21,8 +21,12 @@ target 'Nutrition-Analysis' do
   target 'Nutrition-AnalysisTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'RxBlocking'
-    pod 'RxTest'
+    # Pods for testing
+       pod 'RxBlocking'
+       pod 'RxTest'
+       pod 'Quick'
+       pod 'Nimble'
+       pod 'Swinject'
   end
 
   target 'Nutrition-AnalysisUITests' do

@@ -1,9 +1,3 @@
-//
-//  Reachability.swift
-//  Ionic
-//
-//
-
 import Reachability
 import SystemConfiguration
 
