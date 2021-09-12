@@ -16,6 +16,11 @@
 		BB72556C26D296C600EF98AD /* MainCoordinatorProctocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72554126D296C600EF98AD /* MainCoordinatorProctocol.swift */; };
 		BB72556D26D296C600EF98AD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72554226D296C600EF98AD /* MainCoordinator.swift */; };
 		BB72556E26D296C600EF98AD /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72554326D296C600EF98AD /* CoordinatorProtocol.swift */; };
+		BB738AB626EA486800096B36 /* SecureStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB738AB526EA486800096B36 /* SecureStoreError.swift */; };
+		BB738AB826EA495B00096B36 /* SecureStoreQueryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB738AB726EA495B00096B36 /* SecureStoreQueryable.swift */; };
+		BB738ABA26EA49F200096B36 /* SecureStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB738AB926EA49F200096B36 /* SecureStore.swift */; };
+		BB738ABC26EA4A4F00096B36 /* InternetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB738ABB26EA4A4F00096B36 /* InternetProtocol.swift */; };
+		BB738ABE26EA4A9800096B36 /* InternetAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB738ABD26EA4A9800096B36 /* InternetAuthenticationType.swift */; };
 		BB8332DC26D2C1C5007CFAA0 /* TotalNutrientsKCal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8332DB26D2C1C5007CFAA0 /* TotalNutrientsKCal.swift */; };
 		BB9DCE5B26D12DFB00A8609F /* NutritionEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9DCE4D26D12DFB00A8609F /* NutritionEndPoint.swift */; };
 		BB9DCE5C26D12DFB00A8609F /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9DCE4F26D12DFB00A8609F /* ParameterEncoding.swift */; };
@@ -32,6 +37,8 @@
 		BB9DCE7326D1556600A8609F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9DCE6F26D1556500A8609F /* UIView+Border.swift */; };
 		BB9DCE7426D1556600A8609F /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9DCE7026D1556500A8609F /* UIView+CornerRadius.swift */; };
 		BB9DCE7A26D1F06B00A8609F /* TotalNutrients.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9DCE7826D1F06B00A8609F /* TotalNutrients.swift */; };
+		BBA7E9A326EAEA2700B4F637 /* SecureStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7E9A226EAEA2700B4F637 /* SecureStoreTests.swift */; };
+		BBA7E9A526EDA9DA00B4F637 /* KeychainFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7E9A426EDA9DA00B4F637 /* KeychainFacade.swift */; };
 		BBB0144226DA7C2B0043154E /* mocky.yml in Resources */ = {isa = PBXBuildFile; fileRef = BBB0144126DA7C2B0043154E /* mocky.yml */; };
 		BBB0144F26E025A60043154E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0144E26E025A60043154E /* BaseViewController.swift */; };
 		BBB0145326E034450043154E /* ReachabilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0145226E034450043154E /* ReachabilityHelper.swift */; };
@@ -91,6 +98,11 @@
 		BB72554126D296C600EF98AD /* MainCoordinatorProctocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinatorProctocol.swift; sourceTree = "<group>"; };
 		BB72554226D296C600EF98AD /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		BB72554326D296C600EF98AD /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		BB738AB526EA486800096B36 /* SecureStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStoreError.swift; sourceTree = "<group>"; };
+		BB738AB726EA495B00096B36 /* SecureStoreQueryable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStoreQueryable.swift; sourceTree = "<group>"; };
+		BB738AB926EA49F200096B36 /* SecureStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStore.swift; sourceTree = "<group>"; };
+		BB738ABB26EA4A4F00096B36 /* InternetProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetProtocol.swift; sourceTree = "<group>"; };
+		BB738ABD26EA4A9800096B36 /* InternetAuthenticationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetAuthenticationType.swift; sourceTree = "<group>"; };
 		BB8332DB26D2C1C5007CFAA0 /* TotalNutrientsKCal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalNutrientsKCal.swift; sourceTree = "<group>"; };
 		BB9DCE4D26D12DFB00A8609F /* NutritionEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionEndPoint.swift; sourceTree = "<group>"; };
 		BB9DCE4F26D12DFB00A8609F /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -107,6 +119,8 @@
 		BB9DCE6F26D1556500A8609F /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		BB9DCE7026D1556500A8609F /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
 		BB9DCE7826D1F06B00A8609F /* TotalNutrients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNutrients.swift; sourceTree = "<group>"; };
+		BBA7E9A226EAEA2700B4F637 /* SecureStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStoreTests.swift; sourceTree = "<group>"; };
+		BBA7E9A426EDA9DA00B4F637 /* KeychainFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainFacade.swift; sourceTree = "<group>"; };
 		BBB0144126DA7C2B0043154E /* mocky.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = mocky.yml; sourceTree = "<group>"; };
 		BBB0144E26E025A60043154E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BBB0145226E034450043154E /* ReachabilityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityHelper.swift; sourceTree = "<group>"; };
@@ -220,6 +234,18 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		BB738AB426EA484200096B36 /* KeyChainSecureStore */ = {
+			isa = PBXGroup;
+			children = (
+				BB738ABB26EA4A4F00096B36 /* InternetProtocol.swift */,
+				BB738AB726EA495B00096B36 /* SecureStoreQueryable.swift */,
+				BB738AB526EA486800096B36 /* SecureStoreError.swift */,
+				BB738AB926EA49F200096B36 /* SecureStore.swift */,
+				BB738ABD26EA4A9800096B36 /* InternetAuthenticationType.swift */,
+			);
+			path = KeyChainSecureStore;
+			sourceTree = "<group>";
+		};
 		BB9DCE4C26D12DFB00A8609F /* EndPoint */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +302,14 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
+		BBA7E9A626EDA9EB00B4F637 /* AsymmetricCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				BBA7E9A426EDA9DA00B4F637 /* KeychainFacade.swift */,
+			);
+			name = AsymmetricCrypto;
+			sourceTree = "<group>";
+		};
 		BBB0144D26E01DF30043154E /* protocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +331,8 @@
 		BBB0145126E0343B0043154E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				BBA7E9A626EDA9EB00B4F637 /* AsymmetricCrypto */,
+				BB738AB426EA484200096B36 /* KeyChainSecureStore */,
 				BBB0145426E0345E0043154E /* Print.swift */,
 				BBB0145226E034450043154E /* ReachabilityHelper.swift */,
 			);
@@ -358,6 +394,7 @@
 		BBC7C3F426D0860B00BBA6DA /* Nutrition-AnalysisTests */ = {
 			isa = PBXGroup;
 			children = (
+				BBA7E9A226EAEA2700B4F637 /* SecureStoreTests.swift */,
 				BBC7C3F526D0860B00BBA6DA /* Nutrition_AnalysisTests.swift */,
 				BBC7C3F726D0860B00BBA6DA /* Info.plist */,
 			);
@@ -773,7 +810,9 @@
 			files = (
 				BB72554426D296C600EF98AD /* AppCoordinator.swift in Sources */,
 				BBB0145526E0345E0043154E /* Print.swift in Sources */,
+				BB738AB826EA495B00096B36 /* SecureStoreQueryable.swift in Sources */,
 				BB9DCE6826D13AFD00A8609F /* NetworkConstants.swift in Sources */,
+				BBA7E9A526EDA9DA00B4F637 /* KeychainFacade.swift in Sources */,
 				BB9DCE6326D12DFB00A8609F /* NetworkLogger.swift in Sources */,
 				BB9DCE5C26D12DFB00A8609F /* ParameterEncoding.swift in Sources */,
 				BBCC9AE826D0B665005AFA13 /* Nutrient.swift in Sources */,
@@ -781,6 +820,7 @@
 				BB9DCE6226D12DFB00A8609F /* Router.swift in Sources */,
 				BBCC9AFF26D0B78F005AFA13 /* HomeViewController.swift in Sources */,
 				BBCC9ADC26D0B57D005AFA13 /* HomeViewModel.swift in Sources */,
+				BB738ABC26EA4A4F00096B36 /* InternetProtocol.swift in Sources */,
 				BBCC9AFD26D0B779005AFA13 /* IngredientsDetailsViewController.swift in Sources */,
 				BB9DCE7426D1556600A8609F /* UIView+CornerRadius.swift in Sources */,
 				BB72556D26D296C600EF98AD /* MainCoordinator.swift in Sources */,
@@ -790,6 +830,7 @@
 				BB9DCE6526D12DFB00A8609F /* NetworkManager.swift in Sources */,
 				BB9DCE6126D12DFB00A8609F /* HTTPMethod.swift in Sources */,
 				BBC7C3E126D0860A00BBA6DA /* SceneDelegate.swift in Sources */,
+				BB738ABA26EA49F200096B36 /* SecureStore.swift in Sources */,
 				BB9DCE6426D12DFB00A8609F /* EndPointType.swift in Sources */,
 				BBB0145826E2CD1E0043154E /* AppDelegate+Setup.swift in Sources */,
 				BB8332DC26D2C1C5007CFAA0 /* TotalNutrientsKCal.swift in Sources */,
@@ -802,7 +843,9 @@
 				BB9DCE6026D12DFB00A8609F /* HTTPTask.swift in Sources */,
 				BB72556E26D296C600EF98AD /* CoordinatorProtocol.swift in Sources */,
 				BB9DCE7126D1556600A8609F /* UIViewController + Extension.swift in Sources */,
+				BB738AB626EA486800096B36 /* SecureStoreError.swift in Sources */,
 				BBCC9AF226D0B6B1005AFA13 /* IngredientsDetailsViewModel.swift in Sources */,
+				BB738ABE26EA4A9800096B36 /* InternetAuthenticationType.swift in Sources */,
 				BB9DCE7326D1556600A8609F /* UIView+Border.swift in Sources */,
 				BB72556C26D296C600EF98AD /* MainCoordinatorProctocol.swift in Sources */,
 				BB9DCE5D26D12DFB00A8609F /* URLParameterEncoding.swift in Sources */,
@@ -817,6 +860,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA7E9A326EAEA2700B4F637 /* SecureStoreTests.swift in Sources */,
 				BBC7C3F626D0860B00BBA6DA /* Nutrition_AnalysisTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
