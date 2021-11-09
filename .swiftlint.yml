@@ -32,7 +32,6 @@ disabled_rules: # rule identifiers to exclude from running
   - closing_brace
   - closure_parameter_position
   - shorthand_operator
-  - trailing_whitespace
   - colon
   - mark
   - unused_optional_binding
@@ -46,7 +45,8 @@ disabled_rules: # rule identifiers to exclude from running
 cyclomatic_complexity:
   warning: 25 # two nested ifs are acceptable
   error: 50   # six nested ifs shows warning, 6 causes compile error
-
+trailing_whitespace:
+  severity: warning
 
 opt_in_rules: # some rules are only opt-in
   # - empty_count
