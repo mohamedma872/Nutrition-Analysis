@@ -1,10 +1,4 @@
-//
-//  BaseViewController.swift
-//  Hero
-//
-//  Created by sadman samee on 6/5/17.
-//  Copyright © 2017 sadman samee. All rights reserved.
-//
+
 
 import Reachability
 import UIKit

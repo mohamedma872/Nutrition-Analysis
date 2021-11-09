@@ -1,10 +1,4 @@
-//
-//  KeychainFacade.swift
-//  AsymmetricCryptoDemo
-//
-//  Created by Karoly Nyisztor on 9/6/18.
-//  Copyright © 2018 Karoly Nyisztor. All rights reserved.
-//
+
 
 import Foundation
 import Security
