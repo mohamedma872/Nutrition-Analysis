@@ -1,7 +1,9 @@
 PODS:
   - Differentiator (5.0.0)
   - MBProgressHUD (1.2.0)
+  - Nimble (9.2.1)
   - ObjectMapper (4.2.0)
+  - Quick (4.0.0)
   - ReachabilitySwift (5.0.0)
   - RxBlocking (6.2.0):
     - RxSwift (= 6.2.0)
@@ -27,15 +29,13 @@ PODS:
     - RxSwift (= 6.2.0)
   - Sourcery (1.0.3)
   - SwiftLint (0.43.1)
-  - SwiftyMocky (4.0.4):
-    - Sourcery (~> 1.0.2)
   - Swinject (2.8.0)
-  - SwinjectStoryboard (2.2.0):
-    - Swinject (~> 2.6)
 
 DEPENDENCIES:
   - MBProgressHUD
+  - Nimble
   - ObjectMapper
+  - Quick
   - ReachabilitySwift
   - RxBlocking
   - RxCocoa
@@ -45,15 +45,15 @@ DEPENDENCIES:
   - RxTest
   - Sourcery
   - SwiftLint
-  - SwiftyMocky
   - Swinject
-  - SwinjectStoryboard
 
 SPEC REPOS:
   trunk:
     - Differentiator
     - MBProgressHUD
+    - Nimble
     - ObjectMapper
+    - Quick
     - ReachabilitySwift
     - RxBlocking
     - RxCocoa
@@ -64,14 +64,14 @@ SPEC REPOS:
     - RxTest
     - Sourcery
     - SwiftLint
-    - SwiftyMocky
     - Swinject
-    - SwinjectStoryboard
 
 SPEC CHECKSUMS:
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   RxBlocking: 0b29f7d2079109a8de49c411381bed7c33ef1eeb
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
@@ -82,10 +82,8 @@ SPEC CHECKSUMS:
   RxTest: 0c692fa672b694373ba86d2b00033595297a2831
   Sourcery: 70a6048014bd4f37ea80e6bd4354d47bf3b760e1
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
-  SwiftyMocky: 1fb3ceca9ded134dad4da58a0f20023d7f685ccf
   Swinject: db795b8d6d78559b25fbebb0170d2635be1176e2
-  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
 
-PODFILE CHECKSUM: 1c8abf5ad87024c031f13008385ac99370304358
+PODFILE CHECKSUM: 0c3e8de6546fc27623250f9a728fea11a92c55ba
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

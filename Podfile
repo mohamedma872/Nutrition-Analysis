@@ -16,7 +16,6 @@ target 'Nutrition-Analysis' do
   pod 'SwiftLint'
   pod 'Swinject'
   pod 'Sourcery'
-  pod 'SwiftyMocky'
   pod 'ReachabilitySwift'
   target 'Nutrition-AnalysisTests' do
     inherit! :search_paths
