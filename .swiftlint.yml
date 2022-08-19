@@ -1,15 +1,7 @@
 disabled_rules: # rule identifiers to exclude from running
-  - line_length
-  - variable_name
   - force_cast
   - control_statement
-  - file_length
-  - force_try
   - empty_enum_arguments
-  - cyclomatic_complexity
-  - type_body_length
-  - function_body_length
-  - type_name
   - vertical_whitespace
   - unused_closure_parameter
   - comma
